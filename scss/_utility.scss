@@ -1,0 +1,116 @@
+.container {
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.width-1450 {
+    max-width: 1450px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: $primary-color;
+    margin: 1.5rem 0;
+    border: none;
+    border-radius: 5px;
+    color: $dark-color;
+}
+
+.btn-dark {
+    background: $dark-color;
+    color: #fff;
+}
+
+.btn-mini {
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.bottom-line {
+    display: block;
+    height: 2px;
+    width: 5rem;
+    background: #E4DED8;
+    margin: 0.5rem auto 5rem auto;
+}
+
+.long-upper-line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #b2a390;
+    margin: 0 auto 0 auto;
+}
+
+.general-line {
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    background: #ccc;
+    margin: 3rem 0;
+} 
+
+.left {
+    text-align: left;
+}
+
+.p-text {
+    margin-left: 5rem;
+        font-size: 1.1rem;
+        color: #888;
+}
+
+.sub-title {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.mg-0 {
+    margin: 0.5rem auto 0rem auto;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1.2fr;
+}
+
+.arrow {
+    margin-bottom: 3rem;
+    opacity: 0.6;
+    animation: MoveUpDown 1s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes MoveUpDown {
+ 0%, 100% {
+     margin-bottom: 3rem;
+ } 
+ 50% {
+     margin-bottom: 2rem;
+ }
+}
+
+
+.arrow-little {
+    opacity: 0.6;
+    animation: MoveUpDownLittle 1s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes MoveUpDownLittle {
+ 0%, 100% {
+     margin-bottom: -0.5rem;
+ } 
+ 50% {
+     margin-bottom: 1rem;
+ }
+}

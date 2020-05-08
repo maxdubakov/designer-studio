@@ -1,0 +1,133 @@
+@media (max-width: 1100px) {
+  .navbar {
+    justify-content: center;
+    margin: 0; }
+    .navbar > a img {
+      display: none; }
+    .navbar ul {
+      margin-right: 0; }
+      .navbar ul li {
+        padding-right: 1rem; }
+    .navbar .form-controller {
+      margin-left: 5rem; }
+    .navbar .form-wrap-nav {
+      margin-right: 1rem; }
+      .navbar .form-wrap-nav .search {
+        margin-top: 0.5rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.5rem; }
+  #about-1 {
+    grid-template-columns: repeat(1, 1fr); }
+    #about-1 .pictures {
+      margin-bottom: 4rem; }
+    #about-1 p {
+      margin-left: 0; }
+  #socials .grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center; }
+    #socials .grid .follow-container {
+      grid-template-rows: 4fr 1fr; }
+      #socials .grid .follow-container.text-container p.left {
+        display: none; }
+  #products .categories-container {
+    grid-template-columns: repeat(2, 1fr); }
+  #main-footer .footer-wrap {
+    grid-template-columns: repeat(1, 1fr); }
+    #main-footer .footer-wrap > * {
+      border: none; }
+    #main-footer .footer-wrap > *:nth-child(2) {
+      position: relative; }
+      #main-footer .footer-wrap > *:nth-child(2) > * {
+        position: absolute;
+        left: 0;
+        padding: 0 2.8rem;
+        text-align: center; }
+  #main-footer .footer-wrap-2 {
+    grid-template-columns: repeat(3, 2fr); }
+    #main-footer .footer-wrap-2 .links {
+      text-align: left; } }
+
+@media (max-width: 500px) {
+  #showcase .showcase-container {
+    justify-content: space-between; }
+    #showcase .showcase-container div > h1 {
+      font-size: 3rem;
+      line-height: 4rem; }
+    #showcase .showcase-container div > p {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      line-height: 3rem; }
+  .navbar {
+    height: 60px;
+    font-size: 0.9rem; }
+    .navbar i {
+      display: none; }
+    .navbar ul {
+      margin-right: -8rem; }
+      .navbar ul li {
+        padding: 0.8rem; }
+        .navbar ul li:first-child {
+          padding-left: 0rem; }
+    .navbar .form-controller .form-wrap-nav {
+      display: none; }
+  #products .categories-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0; }
+  #projects .items {
+    grid-template-columns: repeat(1, 1fr); }
+    #projects .items .item-text-title {
+      font-size: 1.4rem; }
+    #projects .items .item-text-category {
+      font-size: 1rem; }
+  #socials .grid .follow-container .follow-image .image-container {
+    width: 200px;
+    height: 200px;
+    margin-left: -23%; }
+  #socials .grid .follow-container .link {
+    display: none; }
+  #main-footer {
+    margin-top: 3rem; }
+    #main-footer .footer-wrap {
+      display: block; }
+      #main-footer .footer-wrap #logo a img {
+        width: 200px;
+        height: 180px; }
+      #main-footer .footer-wrap > * {
+        padding: 1rem; }
+      #main-footer .footer-wrap .column-list {
+        margin-top: 17rem; }
+      #main-footer .footer-wrap .follow-us .social-media ul li {
+        padding: 0 1rem; }
+    #main-footer .footer-wrap-2 {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      grid-gap: 1rem;
+      padding-top: 1rem;
+      height: 100%; }
+      #main-footer .footer-wrap-2 h5, #main-footer .footer-wrap-2 h6 {
+        text-align: center; }
+      #main-footer .footer-wrap-2 .links {
+        text-align: center; } }
+
+@media (max-width: 360px) {
+  .navbar ul li:hover {
+    font-size: 0.9rem; }
+  #socials .grid .follow-container .follow-image .image-container {
+    margin-left: -40%; }
+  #main-footer .footer-wrap #logo a img {
+    width: 150px;
+    height: 130px; }
+  #main-footer .footer-wrap .column-list {
+    margin-top: 25rem; }
+  #main-footer .footer-wrap .follow-us .social-media ul li {
+    padding: 0 0.5rem; }
+  #main-footer .footer-wrap-2 {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-gap: 1rem;
+    padding-top: 1rem;
+    height: 100%; }
+    #main-footer .footer-wrap-2 h5, #main-footer .footer-wrap-2 h6 {
+      text-align: center; }
+    #main-footer .footer-wrap-2 .links {
+      text-align: center; } }
