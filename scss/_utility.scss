@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .container {
     max-width: $website-width;
@@ -111,6 +112,14 @@
     margin: 3rem 0;
 }
 
+.left-line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    // margin: 0 2rem;
+    margin-top: 0.5rem;
+}
 
 .flex-reversed {
     flex-direction: row-reverse;
@@ -311,7 +320,7 @@
 
 #present-data {
     position: relative;
-    background: url('../images/company-1.jpg') no-repeat center center/cover;
+    background: url('../images/company-7.jpg') no-repeat center center/cover;
     height: 100vh;
 
     &::before {
@@ -322,16 +331,38 @@
         left: 0;
         width: 100%;
         height: 100%;
-        // z-index: -1;
+        z-index: 1;
     }
 
     .present-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        top: 45%;
+        left: 4%;
         color: #fff;
-        z-index: 10;
+        z-index: 1;
+
+        .present-content-column {
+
+            margin-left: 2rem;
+            .cursive {
+                font-size: 1.5rem;
+                font-family: Georgia,Times,'Times New Roman',serif;
+                font-style: italic;
+                font-weight: lighter;
+            }
+
+            h1 {
+                font-size: 3.2rem;
+                text-align: left;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            a {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -463,6 +494,14 @@
     & > * {
         margin: 1.7rem;
     }
+}
+
+.grid-display-top {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50vw;
 }
 
 .image-container {
