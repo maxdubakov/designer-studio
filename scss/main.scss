@@ -251,23 +251,23 @@ h1 {
 
     .categories-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 2rem;
         align-items: center;
         justify-content: center;
-        margin: 0 4rem;
     }
 
     .item-product {
         background: $primary-color;
         overflow: hidden;
-        margin: 1rem;
+        margin: 0 1rem;
+        margin-bottom: 2rem;
         margin-top: 0;
-        height: 400px;
+        height: 390px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         transform: scale(1);
         transition: all 0.2s ease-in-out;
@@ -280,7 +280,6 @@ h1 {
         }
 
         .item-product-image {
-            margin: 0.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -291,13 +290,18 @@ h1 {
         }
 
         .item-product-button {
-            margin-top: -0.1rem;
+            margin-top: 0.7rem;
+            color: #000;
+
+            
         }
 
         &:hover {
             transform: scale(1.1);
             transition: all 0.4s ease-in-out;
-            color: #fff;
+            .item-product-button a {
+                color: #7e7364;
+            }
         }
     }
 
