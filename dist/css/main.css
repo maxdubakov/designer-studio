@@ -137,16 +137,17 @@
   grid-gap: 5rem; }
 
 .arrow {
-  margin-bottom: 3rem;
-  opacity: 0.6;
+  padding-bottom: 3rem;
+  opacity: 0.7;
   animation: MoveUpDown 1s linear infinite;
-  animation-timing-function: ease-in-out; }
+  animation-timing-function: ease-in-out;
+  text-align: center; }
 
 @keyframes MoveUpDown {
   0%, 100% {
-    margin-bottom: 3rem; }
+    padding-bottom: 3rem; }
   50% {
-    margin-bottom: 2rem; } }
+    padding-bottom: 2rem; } }
 
 .arrow-little {
   opacity: 0.6;
@@ -727,12 +728,12 @@ h1 {
   height: 100vh;
   position: relative; }
   #showcase:before {
-    background: url("../images/main.jpg") no-repeat center center/cover;
     content: '';
+    background: url("../images/main.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 110%;
     height: 100%;
     z-index: -1; }
   #showcase .showcase-container {
@@ -741,14 +742,16 @@ h1 {
     align-items: center;
     justify-content: space-between;
     height: 100%; }
-    #showcase .showcase-container > div h1 {
-      font-family: 'Roboto', sans-serif;
-      margin: 15rem 0 6rem 0;
-      font-size: 4rem; }
+    #showcase .showcase-container > div img {
+      margin-top: 8rem;
+      width: 50%;
+      height: 80%; }
     #showcase .showcase-container > div p {
       font-weight: lighter;
       font-family: 'Roboto', sans-serif;
-      font-size: 1.8rem; }
+      margin-top: 3rem;
+      color: black;
+      font-size: 2.5rem; }
 
 .navbar {
   display: flex;
